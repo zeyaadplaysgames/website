@@ -1,0 +1,74 @@
+body {
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #fff;
+}
+
+.terminal {
+  width: 80%;
+  margin: 50px auto;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-header {
+  background-color: #333;
+  padding: 5px;
+  text-align: center;
+}
+
+.terminal-body {
+  background-color: #000;
+  flex-grow: 1; /* Fill remaining space */
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.terminal-input {
+  background-color: #000;
+  padding: 5px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  color: #00ff00;
+  padding-right: 5px;
+}
+
+.terminal-input input {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  flex-grow: 1; /* Fill remaining space */
+  padding: 5px;
+  outline: none;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+}
+
+.terminal-input input::placeholder {
+  color: #aaa;
+}
+
+.terminal-input input:focus {
+  border: none;
+  outline: none;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
